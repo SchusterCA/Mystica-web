@@ -828,7 +828,7 @@ border-top-right-radius: 1.5rem;
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:480px) {
 
   .contactoph {
     margin-bottom: 2rem;
@@ -939,7 +939,7 @@ border-top-right-radius: 1.5rem;
         
     }
     .principal {
-    width: 600px;
+    width: 480px;
     border: none;
     }
 
