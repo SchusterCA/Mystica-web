@@ -568,90 +568,12 @@ input[type=text], input[type=tel], input[type=email] {
     
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 
-        .derechos {
-            background-color: var(--colorf);
-            height: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    }
-
-    .derechos__p {
-        font-family: var(--fuente2);
-        font-style: italic;
-        color: var(--color);
-        font-size: 0.6rem;
-        margin-top: 1rem;
-    }
-
-    .footer {
-        display: flex;
-        align-items:baseline;
-        background-color: var(--colornav_f);
-    }
-
-    .logo__footerimg {
-        width: 10rem;
-        height: auto;
-        margin: 2rem;
-    }
-
-    .footer_h {
-        color: var(--color);
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        
-    }
-
-    .footer__a {
-        font-size: 1.4rem;
-    }
-    .footer_ip,.footer_ie {
-        height: 1.5rem;
-        width: auto;
-    }
-
-    .footer__containerpago,.footer__containerenvio {
-        margin-bottom: 2rem;
-    }
-
-    .footer__container,.footer__nav,.footer__redes {
-        margin:auto;
-    }
-
-    .footer__redesul {
-        display: flex;
-    }
-
-    .f__ig {
-        display: flex;
-        background-image:url(../assets/instagram_footer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 2rem;
-        height: 2rem;
-        color: transparent;
-    }
-
-    .f__tk {
-        display: flex;
-        background-image:url(../assets/tiktok_footer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .f__fb {
-        display: flex;
-        background-image:url(../assets/facebook_footer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 2rem;
-        height: 2rem;
-        
-    }
+    .hero__text {
+    background-image: url(../assets/hero-mobile.png);
+    background-repeat: no-repeat;
+    height: 35rem;
+}
 
 }
