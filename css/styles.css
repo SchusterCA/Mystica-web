@@ -1,0 +1,574 @@
+/**bem**/
+
+:root {
+    --colortxt_T1: #262626;
+    --colorT2: #FC7753;
+    --colorA: #E01A4F;
+    --colornav_f: #BE95C4;
+    --colorf: #7D5B82;
+    --colorbox: #F4A89F;
+    --colorheader: #F9F7F2;
+    --color: #fff;
+    --fuente1: "Bebas Neue";
+    --fuente2: "Montserrat";
+}
+
+/**estilización**/
+
+html {
+    font-size: 62,5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/**generales**/
+
+
+body {
+    background: linear-gradient(360deg, rgba(230, 205, 234, 1) 25%, rgba(250, 248, 242, 1) 72%);
+    line-height: 1.5;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#ofertas-title {
+    color: var(--colorT2);
+    text-align: center;
+}
+
+h1,h2,h3,a {
+    font-family:var(--fuente1);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+
+.oferta {
+    color: var(--colorT2);
+}
+
+p {
+    font-family: var(--fuente2);
+    color: var(--colortxt_T1);
+    font-size: 1rem;
+}
+
+a {
+    color: var(--color);
+}
+
+h1,h2,h3 {
+    color: var(--colortxt_T1);
+}
+
+
+
+/** header **/
+
+.header {
+    color: var(--colorheader);
+    display: flex;
+    justify-content: center;
+
+}
+
+.branding {
+    margin-right: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo-link {
+    height: 5rem;
+}
+
+.btn-header {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    color: var(--color);
+    border: none;
+    background-color: var(--colorA);
+}
+
+.iconob {
+    margin-right: 0.5rem;
+}
+
+#buscador {
+    border-radius: 0.5rem;
+    border-color: var(--colorA);
+    font-weight: 100;
+    align-items: center;
+    width: 40rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    margin-top: 1.5rem;
+}
+
+.inicio,.cart {
+    color: var(--colortxt_T1);
+    font-family: var(--fuente2);
+    font-size: 0.8rem;
+}
+
+.inicio_carrito {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.logo_h {
+    height: 1.2rem;
+    margin-top: 2rem;
+}
+
+.inicio {
+    padding-left: 10rem;
+}
+
+.inicio__s {
+    color: var(--colortxt_T1);
+    font-family:var(--fuente2);
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+nav {
+    background-color: var(--colornav_f);
+}
+
+.navbar,.navli {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    height: 3rem;
+}
+
+/**main*/
+
+.hero__text {
+    background-image: url(../assets/hero-desk.png);
+    background-repeat: no-repeat;
+    height: 35rem;
+}
+h1 {
+    margin-left: -1000rem;
+}
+
+/**index**/
+
+.parrafo_index {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+.container,.text-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.card_productos {
+    background-color: var(--color);
+    width: 14rem;
+    height: 24rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card__ofertaimg {
+width: 14rem;
+height: auto;
+flex-shrink: 0;
+border-top-left-radius: 1.5rem;
+border-top-right-radius: 1.5rem;
+}
+
+.quiero_btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 9rem;
+    background-color: var(--colorA);
+    color: var(--color);
+    font-family: var(--fuente2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card__h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.ofertas_btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 15rem;
+    background-color: var(--colorA);
+    color: var(--color);
+    font-family: var(--fuente2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn__oferta {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.productosm {
+    display: inline-block;
+    border-style: none;
+    margin: 1rem;
+}
+
+.catalogo {
+    margin-left: 6rem;
+    margin-bottom: 4rem;
+    
+}
+
+.card__img {
+    width: 20rem;
+}
+
+.catalogo_txt {
+    text-align:center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+}
+
+.container__newsletter {
+    background-color: var(--colorbox);
+    height: 18rem;
+}
+
+.newsletter__logo {
+    width: 14rem;
+    height: auto;
+    margin-left: -15rem;
+    margin-top: 2rem;
+}
+
+.news {
+    margin-right: 3.3rem;
+    margin-top: 3rem;
+}
+
+.btn_suscribirme {
+    background-color: var(--colorA);
+    border-radius: 0.5rem;
+    border: none;
+    color:var(--color);
+    font-family: var(--fuente2);
+    font-weight: 600;
+    height: 2.5rem;
+}
+
+.redes {
+    text-align: center;
+}
+
+.redes_container {
+    display: block;
+    align-items: baseline;
+}
+
+.redes__logo {
+    width: 6rem;
+    height: auto;
+
+}
+
+.img__redes {
+    width: 8rem;
+    margin: 6rem 6rem 0.5rem 6rem;
+}
+
+.marcas__h {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.marcas__img {
+    width: 8rem;
+}
+
+.container__marcas {
+    background-color: var(--colorbox);
+    margin: 6rem 0 6rem 0;
+}
+
+.marcas__index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+/**productos**/
+
+
+
+/**preguntas-frecuentes**/
+
+.container__preguntas {
+    margin-bottom: 8rem;
+    padding-left: 6rem;
+    padding-right: 20rem;
+}
+
+.h_pfrecuentes {
+    color: var(--colorT2);
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+/**contacto**/
+
+.contactoph {
+    text-align: center;
+}
+
+.formulario {
+    background-color: #F4A89F;
+    display: inline-block;
+    margin: auto;
+    height: 40rem;
+    width: 35rem;
+    border-radius: 1rem;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+label {
+    display: block;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--colortxt_T1);
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  width: 25rem;
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  
+}
+
+.textarea {
+    margin-left: 5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #939090;
+
+}
+
+/**footer**/
+
+.derechos {
+    background-color: var(--colorf);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechos__p {
+    font-family: var(--fuente2);
+    font-style: italic;
+    color: var(--color);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    display: flex;
+    align-items:baseline;
+    background-color: var(--colornav_f);
+}
+
+.logo__footerimg {
+    width: 15rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.footer_h {
+    color: var(--color);
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+}
+
+.footer__a {
+    font-size: 1.5rem;
+}
+.footer_ip,.footer_ie {
+    height: 2rem;
+    width: auto;
+}
+
+.footer__containerpago,.footer__containerenvio {
+    margin-bottom: 2rem;
+}
+
+.footer__container,.footer__nav,.footer__redes {
+    margin:auto;
+}
+
+.footer__redesul {
+    display: flex;
+    gap:1rem;
+}
+
+.f__ig {
+    display: flex;
+    background-image:url(../assets/instagram_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    color: transparent;
+}
+
+.f__tk {
+    display: flex;
+    background-image:url(../assets/tiktok_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+}
+
+.f__fb {
+    display: flex;
+    background-image:url(../assets/facebook_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+        .derechos {
+            background-color: var(--colorf);
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .derechos__p {
+        font-family: var(--fuente2);
+        font-style: italic;
+        color: var(--color);
+        font-size: 0.6rem;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        align-items:baseline;
+        background-color: var(--colornav_f);
+    }
+
+    .logo__footerimg {
+        width: 10rem;
+        height: auto;
+        margin: 2rem;
+    }
+
+    .footer_h {
+        color: var(--color);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        
+    }
+
+    .footer__a {
+        font-size: 1rem;
+    }
+    .footer_ip,.footer_ie {
+        height: 1rem;
+        width: auto;
+    }
+
+    .footer__containerpago,.footer__containerenvio {
+        margin-bottom: 2rem;
+    }
+
+    .footer__container,.footer__nav,.footer__redes {
+        margin:auto;
+    }
+
+    .footer__redesul {
+        display: flex;
+    }
+
+    .f__ig {
+        display: flex;
+        background-image:url(../assets/instagram_footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        color: transparent;
+    }
+
+    .f__tk {
+        display: flex;
+        background-image:url(../assets/tiktok_footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .f__fb {
+        display: flex;
+        background-image:url(../assets/facebook_footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+}
