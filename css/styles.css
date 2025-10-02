@@ -15,6 +15,14 @@
 
 /**estilización**/
 
+.principal {
+	width: 1366px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 html {
     font-size: 62,5%;
     box-sizing: border-box;
@@ -72,90 +80,115 @@ h1,h2,h3 {
 
 
 
-/** header **/
-
-.header {
-    color: var(--colorheader);
-    display: flex;
-    justify-content: center;
-
-}
-
-.branding {
-    margin-right: 4rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.logo-link {
-    height: 5rem;
-}
-
-.btn-header {
-    width: 6rem;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-    color: var(--color);
-    border: none;
-    background-color: var(--colorA);
-}
-
-.iconob {
-    margin-right: 0.5rem;
-}
-
-#buscador {
-    border-radius: 0.5rem;
-    border-color: var(--colorA);
-    font-weight: 100;
-    align-items: center;
-    width: 40rem;
-    height: 2.5rem;
-    flex-shrink: 0;
-    margin-top: 1.5rem;
-}
-
-.inicio,.cart {
-    color: var(--colortxt_T1);
-    font-family: var(--fuente2);
-    font-size: 0.8rem;
-}
-
-.inicio_carrito {
-    display: flex;
-    gap: 0.2rem;
-}
-
-.logo_h {
-    height: 1.2rem;
-    margin-top: 2rem;
-}
+/* Header */
 
 .inicio {
-    padding-left: 10rem;
+    width: 2rem;
 }
 
-.inicio__s {
-    color: var(--colortxt_T1);
-    font-family:var(--fuente2);
-    font-size: 0.8rem;
-    margin-top: 2rem;
+.cart_ses {
     display: flex;
+    margin-right: 3rem;
+    gap: 1rem;
 }
 
-.navbar {
-    background-color: var(--colornav_f);
+.header {
+    display: flex;
+    align-items: center;
 }
-.navbar,.navli {
+
+.logo__mystica {
+    width: 12rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.buscador_ {
+    width: 30rem;
+    margin-left: 8rem;
+    margin-right: 1rem;
+}
+
+.boton__b {
+    background-color: var(--colorA);
+    border: none;
+    width: 6rem;
+}
+
+.boton__b:hover {
+    background-color:#ab0431;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--colornav_f);
+    margin: auto;
+    font-family: var(--fuente1);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
     display: flex;
     justify-content: center;
-    font-size: 1.2rem;
-    gap: 1.5rem;
-    height: 3rem;
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+.nav > li {
+    position: relative;
+}
 
+.nav li a {
+    color: var(--color);
+    text-decoration: none;
+    padding: 0.625rem 0.937rem;
+    display: block;
+    text-align: center;
+}
+
+.nav li a:hover {
+    color:var(--colorA);
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 15rem;
+    background-color: var(--colorheader);
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    left: 100%;
+    top: 0;
+    margin-left: 0.03rem;
+}
+
+.nav li ul li:hover > ul {
+    display: block;
+}
+
+.selected {
+    color: var(--colorheader) !important;
+}
 
 /**main*/
 
@@ -568,12 +601,42 @@ input[type=text], input[type=tel], input[type=email] {
     
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
 
-    .hero__text {
-    background-image: url(../assets/hero-mobile.png);
-    background-repeat: no-repeat;
-    height: 35rem;
-}
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        font-size: 1.2em;
+
+    }
+
+    .nav li ul {
+        min-width: 8rem;
+        
+    }
+
+    .header {
+    display:flex;
+    flex-direction: column;
+    max-width: 480px;
+    }
 
 }
