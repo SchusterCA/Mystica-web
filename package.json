@@ -1,0 +1,19 @@
+{
+  "name": "mystica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchusterCA/Mystica.git"
+  },
+  "author": "Candela-Aylen-Schuster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SchusterCA/Mystica/issues"
+  },
+  "homepage": "https://github.com/SchusterCA/Mystica#readme"
+}
