@@ -30,46 +30,45 @@
     position: relative;
 }
 
-.nav li a {
-    color: v.$color;
-    text-decoration: none;
-    padding: 0.625rem 0.937rem;
-    display: block;
-    text-align: center;
+.nav {
+    li {
+        a {
+            color: v.$color;
+            text-decoration: none;
+            padding: 0.625rem 0.937rem;
+            display: block;
+            text-align: center;
+        }
+    }
 }
 
 .nav li a:hover {
     color:v.$colorA;
 }
 
-.nav li ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    min-width: 15rem;
-    background-color: v.$colorheader;
-    backdrop-filter: blur(10px);
-    margin: 0;
-    padding: 0;
-    border: none;
+.nav {
+    ul {
+        li {
+            display: none;
+            position: absolute;
+            left: 0;
+            min-width: 15rem;
+            background-color: v.$colorheader;
+            backdrop-filter: blur(10px);
+            margin: 0;
+            padding: 0;
+            border: none;
 
-    @include m.mobile {
-        min-width: 8rem;
+            @include m.mobile {
+                min-width: 8rem;
+            }
+        }
     }
+
 }
 
 .nav li:hover > ul {
     display: block;
-}
-
-.nav li ul li {
-    position: relative;
-}
-
-.nav li ul li ul {
-    left: 100%;
-    top: 0;
-    margin-left: 0.03rem;
 }
 
 .nav li ul li:hover > ul {
