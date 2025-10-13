@@ -1,2 +1,15 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
+
+
+.f__ig {
+    @include iconored (url(../assets/instagram_footer.png), no-repeat, cover, 2rem, 2rem, transparent)
+}
+
+.f__tk {
+    @include iconored (url(../assets/tiktok_footer.png), no-repeat, cover, 2rem, 2rem, transparent)
+}
+
+.f__fb {
+    @include iconored (url(../assets/facebook_footer.png), no-repeat, cover, 2rem, 2rem, transparent)
+}

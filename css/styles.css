@@ -397,34 +397,7 @@ border-top-right-radius: 1.5rem;
     gap:1rem;
 }
 
-.f__ig {
-    display: flex;
-    background-image:url(../assets/instagram_footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 2rem;
-    height: 2rem;
-    color: transparent;
-}
 
-.f__tk {
-    display: flex;
-    background-image:url(../assets/tiktok_footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 2rem;
-    height: 2rem;
-}
-
-.f__fb {
-    display: flex;
-    background-image:url(../assets/facebook_footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 2rem;
-    height: 2rem;
-    
-}
 
 @media screen and (max-width: 800px) {
 

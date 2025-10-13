@@ -27,3 +27,38 @@
     grid-template-rows: repeat($columnas,1fr);
     gap: $espaciado;
 }
+
+@mixin iconored ($image, $repeat, $size, $ancho, $largo, $colort) {
+    display: flex;
+    background-image: $image;
+    background-repeat: $repeat;
+    background-size: $size;
+    width: $ancho;
+    height: $largo;
+    color: $colort;
+}
+
+@mixin boton {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 9rem;
+    background-color: v.$colorA;
+    color: v.$color;
+    font-family: v.$fuentesecundaria;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@mixin margenes ($margin) {
+    margin:$margin;
+}
+
+@mixin padding ($padding) {
+    padding: $padding;
+}
+
+@mixin ayl ($width,$height) {
+    width: $width;
+    height: $heigt;
+}
