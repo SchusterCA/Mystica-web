@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SchusterCA/Mystica/issues"
   },
-  "homepage": "https://github.com/SchusterCA/Mystica#readme"
+  "homepage": "https://github.com/SchusterCA/Mystica#readme",
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
 }

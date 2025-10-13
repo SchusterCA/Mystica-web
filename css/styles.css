@@ -1,194 +1,3 @@
-/**bem**/
-
-:root {
-    --colortxt_T1: #262626;
-    --colorT2: #FC7753;
-    --colorA: #E01A4F;
-    --colornav_f: #BE95C4;
-    --colorf: #7D5B82;
-    --colorbox: #F4A89F;
-    --colorheader: #F9F7F2;
-    --color: #fff;
-    --fuente1: "Bebas Neue";
-    --fuente2: "Montserrat";
-}
-
-/**estilización**/
-
-.principal {
-	width: 1280px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-html {
-    font-size: 62,5%;
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/**generales**/
-
-
-body {
-    background: linear-gradient(360deg, rgba(230, 205, 234, 1) 25%, rgba(250, 248, 242, 1) 72%);
-    line-height: 1.5;
-}
-
-ul, li {
-    list-style: none;
-}
-
-#ofertas-title {
-    color: var(--colorT2);
-    text-align: center;
-}
-
-h1,h2,h3,a {
-    font-family:var(--fuente1);
-    text-decoration: none;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-
-.oferta {
-    color: var(--colorT2);
-}
-
-p {
-    font-family: var(--fuente2);
-    color: var(--colortxt_T1);
-    font-size: 1rem;
-}
-
-a {
-    color: var(--color);
-    font-size: 1.4rem;
-}
-
-h1,h2,h3 {
-    color: var(--colortxt_T1);
-}
-
-
-
-/* Header */
-
-.inicio {
-    width: 2rem;
-}
-
-.cart_ses {
-    display: flex;
-    margin-right: 3rem;
-    gap: 1rem;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.logo__mystica {
-    width: 12rem;
-    height: auto;
-    margin: 2rem;
-}
-
-.buscador_ {
-    width: 30rem;
-    margin-left: 8rem;
-    margin-right: 1rem;
-}
-
-.boton__b {
-    background-color: var(--colorA);
-    border: none;
-    width: 6rem;
-}
-
-.boton__b:hover {
-    background-color:#ab0431;
-}
-
-#navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--colornav_f);
-    margin: auto;
-    font-family: var(--fuente1);
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav > li {
-    position: relative;
-}
-
-.nav li a {
-    color: var(--color);
-    text-decoration: none;
-    padding: 0.625rem 0.937rem;
-    display: block;
-    text-align: center;
-}
-
-.nav li a:hover {
-    color:var(--colorA);
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    min-width: 15rem;
-    background-color: var(--colorheader);
-    backdrop-filter: blur(10px);
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-
-.nav li ul li {
-    position: relative;
-}
-
-.nav li ul li ul {
-    left: 100%;
-    top: 0;
-    margin-left: 0.03rem;
-}
-
-.nav li ul li:hover > ul {
-    display: block;
-}
-
-.selected {
-    color: var(--colorheader) !important;
-}
 
 /**main*/
 
@@ -619,18 +428,6 @@ border-top-right-radius: 1.5rem;
 
 @media screen and (max-width: 800px) {
 
-    .header {
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .logo__mystica {
-        width: 10rem;
-        margin: 1rem;
-    }
-
     .container-fluid {
         flex: 1 1 auto;
         min-width: 18rem;
@@ -641,22 +438,6 @@ border-top-right-radius: 1.5rem;
         flex-wrap: wrap;
         align-items: center;
         gap: 0.5rem;
-    }
-
-    .buscador_ {
-        width: 15rem;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
-    }
-
-
-    .cart_ses {
-        margin-right: 1rem;
-        gap: 0.75rem;
-    }
-
-    .inicio {
-        width: 1.75rem;
     }
 
     .container__preguntas {
@@ -745,10 +526,6 @@ border-top-right-radius: 1.5rem;
 
     .derechos__p {
         margin: 0;
-    }
-    .principal {
-    width: 800px;
-    border: none;
     }
 
     .marcas__img {
@@ -909,70 +686,11 @@ border-top-right-radius: 1.5rem;
     height: 35rem;
     }
 
-    p {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-    
-    h4 {
-        font-size: 1.25rem;
-    }
-    
-    h5 {
-        font-size: 1.2rem;
-    }
-
-    .navbar {
-        font-size: 1.2em;
-
-    }
-
-    .nav li ul {
-        min-width: 8rem;
-        
-    }
-    .principal {
-    width: 600px;
-    border: none;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .logo__mystica {
-        width: 8rem;
-        margin: 1rem 0;
-    }
-
-    .buscador_ {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-
-    .inicio {
-        width: 1.5rem;
-        visibility: hidden;
-    }
+  
 
     .d-flex {
         flex-direction: column;
         width: 100%;
-    }
-
-    .boton__b {
-        width: 100%;
-        margin-top: 0.5rem;
     }
 
     .container__preguntas {

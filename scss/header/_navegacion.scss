@@ -1,0 +1,81 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: v.$colornav_f;
+    margin: auto;
+    font-family: v.$fuenteprincipal;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+    @include m.mobile {
+        font-size: 1.2em;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav li a {
+    color: v.$color;
+    text-decoration: none;
+    padding: 0.625rem 0.937rem;
+    display: block;
+    text-align: center;
+}
+
+.nav li a:hover {
+    color:v.$colorA;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 15rem;
+    background-color: v.$colorheader;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    @include m.mobile {
+        min-width: 8rem;
+    }
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    left: 100%;
+    top: 0;
+    margin-left: 0.03rem;
+}
+
+.nav li ul li:hover > ul {
+    display: block;
+}
+
+.selected {
+    color: v.$colorheader !important;
+}
