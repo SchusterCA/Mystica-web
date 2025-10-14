@@ -120,6 +120,7 @@ h1 {
 .container__newsletter {
   background-color: v.$colorbox;
   height: 18rem;
+  margin-top: 3rem;
 
   .newsletter__logo {
     width: 14rem;
@@ -176,6 +177,14 @@ h1 {
       width: 100%;
     }
   }
+}
+
+.input__news {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 18rem;
+  margin: 0.5rem;
 }
 
 .redes {
@@ -239,6 +248,7 @@ h1 {
 
 .container__marcas {
   background-color: v.$colorbox;
+  margin-bottom: 6rem;
 
   .marcas__img {
     width: 8rem;

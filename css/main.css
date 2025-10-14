@@ -685,6 +685,7 @@ h1 {
 .container__newsletter {
   background-color: #F4A89F;
   height: 18rem;
+  margin-top: 3rem;
 }
 .container__newsletter .newsletter__logo {
   width: 14rem;
@@ -754,6 +755,14 @@ h1 {
   }
 }
 
+.input__news {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 18rem;
+  margin: 0.5rem;
+}
+
 .redes {
   text-align: center;
   padding: 2rem 0;
@@ -806,6 +815,7 @@ h1 {
 
 .container__marcas {
   background-color: #F4A89F;
+  margin-bottom: 6rem;
 }
 .container__marcas .marcas__img {
   width: 8rem;
