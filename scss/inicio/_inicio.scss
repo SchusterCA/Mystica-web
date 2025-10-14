@@ -29,6 +29,13 @@ h1 {
 
 }
 
+.row, .ofertas {
+  @include m.mobile {
+      display: block;
+      align-items: center;
+  }
+}
+
 .card_productos {
   background-color: v.$color;
   width: 14rem;

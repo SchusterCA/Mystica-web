@@ -575,6 +575,13 @@ h1 {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 600px) {
+  .row, .ofertas {
+    display: block;
+    align-items: center;
+  }
+}
+
 .card_productos {
   background-color: #fff;
   width: 14rem;
