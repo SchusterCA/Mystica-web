@@ -2,12 +2,16 @@
 @use "../base/mixins" as m;
 
 .hero__text {
-  background-image: url(../assets/hero-desk.png);
+  background-image: url(/assets/hero-desk.webp);
   background-repeat: no-repeat;
   height: 35rem;
 
+  @include m.tablet {
+    background-image: url(/assets/hero-tablet.webp);
+  }
   @include m.mobile {
-    background-image: url(../assets/hero-mobile.png);
+    background-image: url(/assets/hero-mobile.webp);
+    width: auto;
   }
 }
 

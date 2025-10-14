@@ -98,15 +98,15 @@
 
  //redes
 
-  .f__ig { @include m.iconored(url(../assets/instagram_footer.png), no-repeat, cover, 2rem, 2rem, transparent);
+  .f__ig { @include m.iconored(url(../assets/instagram_footer.webp), no-repeat, cover, 2rem, 2rem, transparent);
            @include m.tablet { width: 1.75rem; height: 1.75rem; }
            @include m.mobile { width: 1.75rem; height: 1.75rem; } }
 
-  .f__tk { @include m.iconored(url(../assets/tiktok_footer.png), no-repeat, cover, 2rem, 2rem, transparent);
+  .f__tk { @include m.iconored(url(../assets/tiktok_footer.webp), no-repeat, cover, 2rem, 2rem, transparent);
            @include m.tablet { width: 1.75rem; height: 1.75rem; }
            @include m.mobile { width: 1.75rem; height: 1.75rem; } }
 
-  .f__fb { @include m.iconored(url(../assets/facebook_footer.png), no-repeat, cover, 2rem, 2rem, transparent);
+  .f__fb { @include m.iconored(url(../assets/facebook_footer.webp), no-repeat, cover, 2rem, 2rem, transparent);
            @include m.tablet { width: 1.75rem; height: 1.75rem; }
            @include m.mobile { width: 1.75rem; height: 1.75rem; } }
 

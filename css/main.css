@@ -436,7 +436,7 @@ h2 {
 }
 .footer .f__ig {
   display: flex;
-  background-image: url(../assets/instagram_footer.png);
+  background-image: url(../assets/instagram_footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 2rem;
@@ -457,7 +457,7 @@ h2 {
 }
 .footer .f__tk {
   display: flex;
-  background-image: url(../assets/tiktok_footer.png);
+  background-image: url(../assets/tiktok_footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 2rem;
@@ -478,7 +478,7 @@ h2 {
 }
 .footer .f__fb {
   display: flex;
-  background-image: url(../assets/facebook_footer.png);
+  background-image: url(../assets/facebook_footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 2rem;
@@ -548,13 +548,19 @@ h2 {
 }
 
 .hero__text {
-  background-image: url(../assets/hero-desk.png);
+  background-image: url(/assets/hero-desk.webp);
   background-repeat: no-repeat;
   height: 35rem;
 }
+@media (max-width: 800px) {
+  .hero__text {
+    background-image: url(/assets/hero-tablet.webp);
+  }
+}
 @media (max-width: 600px) {
   .hero__text {
-    background-image: url(../assets/hero-mobile.png);
+    background-image: url(/assets/hero-mobile.webp);
+    width: auto;
   }
 }
 
