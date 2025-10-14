@@ -55,12 +55,17 @@
 }
 
 .card__opiniones {
-  padding: 2rem;
+  padding: auto;
   border-radius: 1rem;
   border: none;
   background-color: #fff;
-  margin: 1.5rem;
+  margin: 2rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card__opiniones:hover, .card__opiniones:active {
+  transform: scale(1.05);
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 4px 12px 0px;
 }
 @media (max-width: 600px) {
   .card__opiniones {
