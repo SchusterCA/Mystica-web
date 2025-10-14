@@ -642,14 +642,7 @@ h1 {
   margin-bottom: 4rem;
 }
 
-.productosm {
-  display: inline-block;
-  border-style: none;
-  margin: 1rem;
-}
-
 .catalogo {
-  margin-bottom: 4rem;
   margin-left: 6rem;
 }
 @media (max-width: 800px) {
@@ -657,9 +650,17 @@ h1 {
     margin: 2.5rem;
   }
 }
+
+.productosm {
+  display: inline-block;
+  border-style: none;
+  margin: 1rem;
+}
 @media (max-width: 600px) {
-  .catalogo {
-    margin-left: 8rem;
+  .productosm {
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem 2rem 5rem;
   }
 }
 

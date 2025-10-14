@@ -79,26 +79,30 @@ h1 {
   margin-bottom: 4rem;
 }
 
+.catalogo {
+  margin-left: 6rem;
+  @include m.tablet {
+    margin: 2.5rem;
+  }
+}
+
 .productosm {
   display: inline-block;
   border-style: none;
   margin: 1rem;
-}
 
-.catalogo {
-  margin-bottom:4rem;
-  margin-left:6rem;
-
-  @include m.tablet {
-    margin: 2.5rem;
-  }
-    @include m.mobile {
-    margin-left: 8rem;
+  @include m.mobile {
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem 2rem 5rem;
   }
 }
+
+
 
 .card__img {
   width: 20rem;
+
 }
 
 .catalogo_txt {
