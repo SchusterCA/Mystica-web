@@ -1,11 +1,22 @@
-@use "../base/variables" as v;
 @use "../base/mixins" as m;
+@use "../base/variables" as v;
+
 
 .nosotros__txt {
   text-align: justify;
   padding-left: 15rem;
   padding-right: 15rem;
   margin-bottom: 6rem;
+
+  @include m.mobile {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  @include m.tablet {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .nosotros__2 {
@@ -15,19 +26,39 @@
 .h__opiniones {
   text-align: center;
   margin-bottom: 3rem;
+
+  @include m.mobile {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .container__opiniones {
   @include m.grid(2, 0);
+
+  @include m.tablet {
+    @include m.grid(1, 1rem);
+  }
+
+  @include m.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 .card__opiniones {
-  padding: auto;
+  padding: 2rem;
   border-radius: 1rem;
   border: none;
   background-color: v.$color;
   margin: 1.5rem;
   @include m.shadow(rgba(99, 99, 99, 0.2) 0px 2px 8px 0px);
+
+  @include m.mobile {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 
 .contenido__opiniones {
@@ -35,6 +66,16 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 3.5rem;
+
+  @include m.tablet {
+    padding: 2rem;
+  }
+
+  @include m.mobile {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 .opiniones_img {
@@ -42,14 +83,27 @@
   width: 6rem;
   padding: 0.2rem;
   border-radius: 3rem;
+
+  @include m.mobile {
+    margin-bottom: 1rem;
+  }
 }
 
 .opinion {
   margin-top: 1rem;
   text-align: justify;
   font-family: v.$fuentesecundaria;
+
+  @include m.mobile {
+    text-align: center;
+    font-size: 0.9rem;
+  }
 }
 
 .info {
   margin: 1rem;
+
+  @include m.mobile {
+    margin: 0.5rem 0;
+  }
 }
