@@ -2,79 +2,82 @@
 @use "../base/mixins" as m;
 
 #navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: v.$colornav_f;
-    margin: auto;
-    font-family: v.$fuenteprincipal;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: v.$colornav_f;
+  margin: auto;
+  font-family: v.$fuenteprincipal;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
 
-    @include m.mobile {
-        font-size: 1.2em;
-    }
-}
-
-.nav {
+  .nav {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-}
 
-.nav > li {
-    position: relative;
-}
+    > li {
+      position: relative;
 
-.nav {
-    li {
-        a {
-            color: v.$color;
-            text-decoration: none;
-            padding: 0.625rem 0.937rem;
-            display: block;
-            text-align: center;
+      a {
+        color: v.$color;
+        text-decoration: none;
+        padding: 0.625rem 0.937rem;
+        display: block;
+        text-align: center;
+
+        &:hover {
+          color: v.$colorA;
         }
-    }
-}
+      }
 
-.nav li a:hover {
-    color:v.$colorA;
-}
+      ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        min-width: 15rem;
+        background-color: v.$colorheader;
+        backdrop-filter: blur(10px);
+        margin: 0;
+        padding: 0;
+        border: none;
 
-.nav {
-    ul {
         li {
-            display: none;
-            position: absolute;
-            left: 0;
-            min-width: 15rem;
-            background-color: v.$colorheader;
-            backdrop-filter: blur(10px);
-            margin: 0;
-            padding: 0;
-            border: none;
+          position: relative;
 
-            @include m.mobile {
-                min-width: 8rem;
-            }
+          ul {
+            left: 100%;
+            top: 0;
+            margin-left: 0.03rem;
+          }
+
+          &:hover > ul {
+            display: block;
+          }
         }
+      }
+
+      &:hover > ul {
+        display: block;
+      }
+    }
+  }
+
+  .selected {
+    color: v.$colorheader !important;
+  }
+
+  @include m.mobile {
+    .navbar {
+      font-size: 1.2em;
     }
 
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-
-.nav li ul li:hover > ul {
-    display: block;
-}
-
-.selected {
-    color: v.$colorheader !important;
+    .nav li ul {
+      min-width: 8rem;
+    }
+  }
 }

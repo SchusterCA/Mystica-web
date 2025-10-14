@@ -1,0 +1,38 @@
+.container__preguntas {
+  margin-bottom: 8rem;
+  padding-left: 6rem;
+  padding-right: 20rem;
+}
+@media (max-width: 800px) {
+  .container__preguntas {
+    margin-bottom: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media (max-width: 600px) {
+  .container__preguntas {
+    margin-bottom: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.h_pfrecuentes {
+  color: #FC7753;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 800px) {
+  .h_pfrecuentes {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .h_pfrecuentes {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=preguntas-frecuentes.css.map */

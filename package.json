@@ -18,5 +18,6 @@
   "homepage": "https://github.com/SchusterCA/Mystica#readme",
   "dependencies": {
     "sass": "^1.93.2"
-  }
+  },
+  "devDependencies": {}
 }

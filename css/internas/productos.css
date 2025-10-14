@@ -1,0 +1,20 @@
+.containter__productos {
+  display: flex;
+  gap: 3rem;
+}
+
+.productos_h {
+  text-align: center;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+}
+
+.aside__a {
+  color: #262626;
+}
+
+.aside_h {
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=productos.css.map */

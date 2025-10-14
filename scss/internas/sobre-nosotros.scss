@@ -1,0 +1,55 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.nosotros__txt {
+  text-align: justify;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-bottom: 6rem;
+}
+
+.nosotros__2 {
+  color: v.$colorT2;
+}
+
+.h__opiniones {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container__opiniones {
+  @include m.grid(2, 0);
+}
+
+.card__opiniones {
+  padding: auto;
+  border-radius: 1rem;
+  border: none;
+  background-color: v.$color;
+  margin: 1.5rem;
+  @include m.shadow(rgba(99, 99, 99, 0.2) 0px 2px 8px 0px);
+}
+
+.contenido__opiniones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3.5rem;
+}
+
+.opiniones_img {
+  height: 6rem;
+  width: 6rem;
+  padding: 0.2rem;
+  border-radius: 3rem;
+}
+
+.opinion {
+  margin-top: 1rem;
+  text-align: justify;
+  font-family: v.$fuentesecundaria;
+}
+
+.info {
+  margin: 1rem;
+}

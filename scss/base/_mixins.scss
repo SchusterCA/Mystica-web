@@ -1,21 +1,14 @@
 @use "variables" as v;
 
 @mixin mobile {
-    @media (min-width: v.$mobile) {
+    @media (max-width: v.$mobile) {
         @content;
 
     }
 }
 
 @mixin tablet {
-    @media (min-width: v.$tablet) {
-        @content;
-        
-    }
-}
-
-@mixin desktop {
-    @media (min-width: v.$desktop) {
+    @media (max-width: v.$tablet) {
         @content;
         
     }
@@ -60,5 +53,45 @@
 
 @mixin ayl ($width,$height) {
     width: $width;
-    height: $heigt;
+    height: $height;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-gap ($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin font-style($family, $style: normal, $size: 1rem, $color: $color) {
+  font-family: $family;
+  font-style: $style;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin size($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin rounded-top($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-color($color) {
+  color: $color;
 }

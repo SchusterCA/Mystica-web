@@ -1,0 +1,35 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.container__preguntas {
+  margin-bottom: 8rem;
+  padding-left: 6rem;
+  padding-right: 20rem;
+
+  @include m.tablet {
+    margin-bottom: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @include m.mobile {
+    margin-bottom: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.h_pfrecuentes {
+  color: v.$colorT2;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+
+  @include m.tablet {
+    font-size: 2rem;
+  }
+
+  @include m.mobile {
+    font-size: 2rem;
+  }
+}
