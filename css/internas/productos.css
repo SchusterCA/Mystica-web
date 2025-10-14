@@ -2,11 +2,22 @@
   display: flex;
   gap: 3rem;
 }
+@media (max-width: 600px) {
+  .containter__productos {
+    display: block;
+    gap: 1rem;
+  }
+}
 
 .productos_h {
   text-align: center;
   margin-left: 6rem;
   margin-bottom: 3rem;
+}
+@media (max-width: 600px) {
+  .productos_h {
+    margin: auto;
+  }
 }
 
 .aside__a {
@@ -15,6 +26,19 @@
 
 .aside_h {
   margin-left: 1rem;
+}
+@media (max-width: 600px) {
+  .aside_h {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .aside__navul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=productos.css.map */

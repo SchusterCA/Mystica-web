@@ -4,12 +4,19 @@
 .containter__productos {
   display: flex;
   gap: 3rem;
+  @include m.mobile {
+    display: block;
+    gap: 1rem;
+  }
 }
 
 .productos_h {
   text-align: center;
   margin-left: 6rem;
   margin-bottom: 3rem;
+  @include m.mobile {
+    margin: auto;
+  }
 }
 
 .aside__a {
@@ -18,4 +25,19 @@
 
 .aside_h {
   margin-left: 1rem;
+  @include m.mobile {
+    visibility:hidden ;
+  }
+  
 }
+
+.aside__navul {
+    @include m.mobile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    
+   }
+}
+
+
